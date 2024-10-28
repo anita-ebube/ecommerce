@@ -9,9 +9,9 @@ export default {
       colors: {
         hoverBtn: "#A0BCE0",
         hoverBtn1: "#E07575",
-        button2: "#DB4444",
+        button2: "#3B82F6",
         button1: "#00FF66",
-        secondary2: "blue-500",
+        secondary2: "#3B82F6",
         secondary1: "#FFFFFF",
         secondary: "#F5F5F5",
         button: "#000000",

@@ -62,51 +62,10 @@ const NavBar = () => {
           </button>
         </div>
       </div>
-      {openUserMenu && (
-        <UserDropDown
-          closeMenu={() => setOpenUserMenu(false)}
-          handleLogout={handleLogout}
-        />
-      )}
     </div>
   );
 };
 
 export default NavBar;
 
-function UserDropDown({ closeMenu, handleLogout }) {
-  return (
-    <div className="fixed inset-0 z-50 flex  justify-end  pt-20 pr-28">
-      <div className=" relative bg-gray-400 text-text bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50  w-1/5 max-w-md rounded-lg p-6 shadow-lg max-h-[40%] overflow-y-auto items-start gap-2 flex flex-col justify-center text-left">
-        <button
-          className="absolute top-4 right-4 pb-2 text-xl"
-          onClick={closeMenu}
-        >
-          <LiaTimesSolid className="h-6 w-6" />
-        </button>
-        <Link to="/account">
-          <div className=" flex mt-4 gap-3">
-            <CiUser className=" h-6 w-6" />
-            <span>Manage My Account</span>
-          </div>
-        </Link>
-        <div className=" flex gap-3">
-          <PiShoppingBagThin className=" h-6 w-6" />
-          <span>My Order</span>
-        </div>
-        <div className=" flex gap-3">
-          <LiaTimesCircle className=" h-6 w-6" />
-          <span>My Cancellations</span>
-        </div>
-        <div className=" flex gap-3">
-          <CiStar className=" h-6 w-6" />
-          <span>My Reviews</span>
-        </div>
-        <button className=" flex gap-3" onClick={() => handleLogout()}>
-          <CiLogout className=" h-6 w-6" />
-          <span>Logout</span>
-        </button>
-      </div>
-    </div>
-  );
-}
+

@@ -124,7 +124,7 @@ function Product({ product, dispatch }) {
               });
             }}
           >
-            <button className="bg-[#F53E32] text-[#FFFFFF] p-2 ">Add to Cart</button>
+            <button className="bg-[#3B82F6] text-[#FFFFFF] p-2 mt-5 rounded-sm">Add to Cart</button>
           </button>
         </div>
         
