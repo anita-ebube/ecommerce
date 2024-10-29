@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const Cart = () => {
-  const [cartData, setCartData] = useState(null); // State for storing fetched cart data
-  const [loading, setLoading] = useState(true); // State for loading
-  const [error, setError] = useState(null); // State for error handling
+  const [cartData, setCartData] = useState(null); 
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
 
-  // Step 2: Fetch cart data when the component mounts
+  
   useEffect(() => {
-    // Define the API endpoint
     const fetchCartData = async () => {
       try {
         const response = await fetch(
@@ -16,12 +15,12 @@ const Cart = () => {
         if (!response.ok) {
           throw new Error("Failed to fetch cart data");
         }
-        const data = await response.json(); // Parse the JSON response
-        console.log(data); // Set the fetched cart data to state
-        setLoading(false); // Turn off loading
+        const data = await response.json(); 
+        console.log(data); 
+        setLoading(false); 
       } catch (error) {
-        setError(error.message); // Handle errors
-        setLoading(false); // Turn off loading
+        setError(error.message); 
+        setLoading(false); 
       }
     };
 

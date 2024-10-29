@@ -13,7 +13,7 @@ const NavBar = () => {
   const menuItems = [
     { label: "Home", to: "/" },
     { label: "Contact", to: "/contact" },
-    { label: "Sign Up", to: "/signup" },
+    { label: "Create an account", to: "/signup" },
     { label: "Shop", to: "/shop" },
   ];
 

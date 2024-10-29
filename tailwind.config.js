@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        Roboto: ["Roboto", "sans-serif"],  // Add Roboto here
+        'sans': ['ui-sans-serif', 'system-ui'],
       },
       colors: {
         hoverBtn: "#A0BCE0",
