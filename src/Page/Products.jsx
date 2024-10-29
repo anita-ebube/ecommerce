@@ -62,10 +62,7 @@ const ProductPage = () => {
 
   return (
     <>
-      <Path>
-        <span className=" capitalize">{product.category}</span>/ {product.brand}
-        &apos;s {product.title}
-      </Path>
+     
       <div className="flex flex-col md:flex-row justify-center p-4">
         <div className="md:basis-2/3 p-3 flex flex-col gap-2 justify-center mx-auto w-full md:w-1/2">
           <div className="w-full border border-text1/10 shadow rounded flex justify-center">
@@ -91,20 +88,7 @@ const ProductPage = () => {
             <h2 className="text-2xl font-semibold whitespace-nowrap">
               {product.title || "Product Title"}
             </h2>
-            <div className="flex text-sm p-1 items-center gap-0.5 justify-between w-1/3">
-              <StarRating />{" "}
-              <span className="text-text1">({product.rating})</span>
-              <span>|</span>
-              <span className="text-button1 whitespace-nowrap">
-                {product.availabilityStatus}
-              </span>
-            </div>
-            <div>
-              Brand:{" "}
-              <span className="text-secondary2 uppercase">
-                {product.brand || "Unknown Brand"}
-              </span>
-            </div>
+            
             <span className="text-2xl font-medium">
               ${product.price || "0.00"}
             </span>
