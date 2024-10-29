@@ -30,7 +30,7 @@ const NavBar = () => {
 
       <div className=" flex justify-around p-3 items-center border-b border-b-text1/20">
         <div className=" font-semibold text-button text-2xl whitespace-nowrap">
-          Food Trove
+          <a href="/">Food Trove</a>
         </div>
         <div className=" ">
           <ul className="flex gap-9 font-light">
@@ -50,8 +50,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className=" flex gap-5 items-center">
-          <SearchBar />
-          <Link to="/cart">
+          <Link to="/Cart">
             <PiShoppingCartThin className=" h-6 w-6 hover:text-secondary2 cursor-pointer" />
           </Link>
           <button

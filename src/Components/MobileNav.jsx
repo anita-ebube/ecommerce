@@ -61,7 +61,7 @@ export default MobileNav;
 function Nav({ closeMenu }) {
   return (
     <div className="fixed inset-0 z-50 flex justify-center bg-black bg-opacity-50 pt-10">
-      <div className="relative bg-white w-3/4 max-w-md rounded-lg p-6 shadow-lg max-h-[40%] overflow-y-auto items-center flex justify-center text-center">
+      <div className="relative bg-white w-full max-w-md rounded-lg p-6 shadow-lg max-h-[50%] overflow-y-auto items-center flex justify-center text-center">
         <button className="absolute top-4 right-4 text-xl" onClick={closeMenu}>
           <LiaTimesSolid className="h-6 w-6" />
         </button>
@@ -70,19 +70,13 @@ function Nav({ closeMenu }) {
             <li className="hover:text-secondary2 cursor-pointer">Home</li>
           </Link>
           <Link to="/contact">
-            <li className="hover:text-secondary2 cursor-pointer">Contact</li>
-          </Link>
-          <Link to="/about">
-            <li className="hover:text-secondary2 cursor-pointer">About</li>
+            <li className="hover:text-secondary2 cursor-pointer">Contact Us</li>
           </Link>
           <Link to="/signup">
-            <li className="hover:text-secondary2 cursor-pointer">Sign Up</li>
+            <li className="hover:text-secondary2 cursor-pointer">Create an account</li>
           </Link>
           <Link to="/shop">
             <li className="hover:text-secondary2 cursor-pointer">Shop</li>
-          </Link>
-          <Link to="/admin">
-            <li className="hover:text-secondary2 cursor-pointer">Dashboard</li>
           </Link>
         </ul>
       </div>
@@ -90,37 +84,4 @@ function Nav({ closeMenu }) {
   );
 }
 
-function UserDropDown({ closeMenu }) {
-  return (
-    <div className="fixed inset-0 z-50 flex  justify-end  pt-20 pr-16">
-      <div className=" relative bg-gray-400 text-text bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50  w-3/4 max-w-md rounded-lg p-6 shadow-lg max-h-[50%] overflow-y-auto items-start gap-2 flex flex-col justify-center text-left">
-        <button
-          className="absolute top-4 right-4 pb-2 text-xl"
-          onClick={closeMenu}
-        >
-          <LiaTimesSolid className="h-6 w-6" />
-        </button>
-        <div className=" flex mt-4 gap-3">
-          <CiUser className=" h-6 w-6" />
-          <span>Manage My Account</span>
-        </div>
-        <div className=" flex gap-3">
-          <PiShoppingBagThin className=" h-6 w-6" />
-          <span>My Order</span>
-        </div>
-        <div className=" flex gap-3">
-          <LiaTimesCircle className=" h-6 w-6" />
-          <span>My Cancellations</span>
-        </div>
-        <div className=" flex gap-3">
-          <CiStar className=" h-6 w-6" />
-          <span>My Reviews</span>
-        </div>
-        <div className=" flex gap-3">
-          <CiLogout className=" h-6 w-6" />
-          <span>Logout</span>
-        </div>
-      </div>
-    </div>
-  );
-}
+

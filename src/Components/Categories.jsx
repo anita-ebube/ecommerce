@@ -1,5 +1,4 @@
 
-import HeroCategory from "./Hero";
 
 const Categories = ({ setCategories, categories }) => {
   const categoriesList = [

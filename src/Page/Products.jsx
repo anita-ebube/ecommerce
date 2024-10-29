@@ -141,19 +141,7 @@ const ProductPage = () => {
                 <Button width={120}>Buy Now</Button>
               </div>
 
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  dispatch(addItemToCart(product));
-                  toast.success("Item added to cart!", {
-                    position: "top-right",
-                    icon: <PiShoppingCartThin className=" h-6 w-6" />,
-                  });
-                }}
-                className="border border-text2 rounded p-1 bg-white hover:bg-secondary2 hover:text-text hover:border-secondary2"
-              >
-                <PiShoppingCartThin className="h-6 w-6" />
-              </button>
+          
             </div>
 
            
